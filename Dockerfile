@@ -7,7 +7,7 @@ RUN useradd -m -d /opt/odoo -U -r -s /bin/bash odoo
 USER odoo
 WORKDIR /opt/odoo
 
-RUN git clone https://www.github.com/odoo/odoo --depth 1 --branch 16.0 --single-branch .
+
 RUN pip3 install -r requirements.txt
 
 EXPOSE 8069
